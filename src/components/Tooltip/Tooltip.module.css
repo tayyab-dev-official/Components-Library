@@ -1,18 +1,67 @@
-.wrapper {
-  position: relative;
-  display: inline-block;
+.tooltip {
+  width: 100%;
+
+  color: #FFFFFF;
+  font-family: "Inter", sans-serif;  
 }
 
-.tooltip {
-  position: absolute;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: black;
-  color: white;
-  padding: 6px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  white-space: nowrap;
-  z-index: 10;
+.tooltip-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  /* background-color: #262626;   */
+  padding: 20px;
+  border-radius: 12px;
+
+  box-shadow: 
+    0px 4px 6px -2px #0000000D,
+    0px 10px 15px -3px #0000001A;
+}
+
+.cross-icon {
+  border: 1px dotted white;
+  width: 12px;
+  height: 12px;
+}
+
+.tooltip-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tooltip-title,
+.tooltip-text {
+  font-size: .9rem;
+  line-height: 1.25;
+}
+
+.tooltip-title {
+  font-weight: 500;
+}
+
+.tooltip-text {
+  font-weight: 400;
+}
+
+.triangle {
+  position: relative;
+  left: 50px;
+  bottom: 5px;
+  width: 34px;
+  height: 19px;
+
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  transform: rotate(180deg);
+}
+
+@media (min-width: 769px){
+  .tooltip {
+    max-width: 384px;
+  }
 }

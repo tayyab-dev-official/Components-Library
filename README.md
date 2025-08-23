@@ -18,35 +18,47 @@ A **modern React component library** built with **Vite** featuring responsive **
 ## 📦 Components
 
 ### Badge
+
 Status indicators in multiple variants:
+
 - **Pill**: Rounded badges for status labels
 - **Square**: Rectangular badges for categorization
 - **Colors**: Primary, Success, Warning, Danger, Gray, Red, Yellow, Green, Blue, Indigo, Purple, Pink
 
 ### Banner
+
 Multi-line notification banners:
+
 - **Types**: Success, Warning, Error, Neutral
 - **Features**: Icons, titles, descriptions, and custom children support
 
 ### Card
+
 Information display cards:
+
 - **Customizable**: Icons, backgrounds, titles, descriptions
 - **Responsive**: Adapts to different screen sizes
 - **Hover Effects**: Subtle shadows and transitions
 
 ### Testimonial
+
 Professional testimonial components:
+
 - **With Image**: Avatar support with responsive image selection
 - **Without Image**: Clean text-only layout with background graphics
 - **Features**: Author names, roles, company affiliations
 
 ### Tooltip
+
 Hover-triggered informational overlays:
+
 - **Positioning**: Auto-positioned relative to trigger element
 - **Styling**: Clean black background with white text
 
 ### Toast
+
 Auto-dismissing notification messages:
+
 - **Types**: Info, Success, Warning, Danger
 - **Features**: Auto-close timer, custom styling, fixed positioning
 
@@ -61,7 +73,7 @@ Auto-dismissing notification messages:
 ## 🎨 Design System
 
 - **Typography**: Inter font family
-- **Breakpoints**: 
+- **Breakpoints**:
   - Mobile: ≤768px
   - Tablet: 769-991px
   - Desktop: ≥992px

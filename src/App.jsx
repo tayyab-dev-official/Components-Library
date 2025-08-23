@@ -3,7 +3,7 @@ import Badges from './components/Badge/Badges'
 import Banners from './components/Banner/Banners'
 import Cards from "./components/Card/Cards";
 import Testimonials from "./components/Testimonial/Testimonials";
-import Tooltip from "./components/Tooltip/Tooltip";
+import Tooltips from "./components/Tooltip/Tooltips";
 import Toast from "./components/Toast/Toast";
 import "./index.css";
 import theme from "./theme";
@@ -33,17 +33,12 @@ export default function App() {
         style={{ boxShadow: theme.shadows.card }}
       >Testimonials</Testimonials>
 
-      
-
-      <article
+      <Tooltips
         className="app-component"
         style={{ boxShadow: theme.shadows.card }}
-      >
-        <h2>Tooltip</h2>
-        <Tooltip text="This is extra info">
-          <button style={{ padding: "8px 16px" }}>Hover me</button>
-        </Tooltip>
-      </article>
+      >Testimonials</Tooltips>
+
+      
 
       <article
         className="app-component"

@@ -5,6 +5,7 @@ import tooltipIcon from '../../assets/tooltip-icon.png'
 import crossIcon from '../../assets/cross.png'
 
 export default function Tooltip({
+  color="#E7FFF3",
   background="#262626",
   title = "Archive notes",
   text = "Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.",
@@ -20,8 +21,12 @@ export default function Tooltip({
       <section className={styles["tooltip-main"]} style={{ background }}>
         <img src={tooltipIcon} alt="envelope icon" className="tooltip-icon" />
         <div className={styles["tooltip-main-content"]}>
-          <h4 className={styles["tooltip-title"]}>{title}</h4>
-          <p className={styles["tooltip-text"]}>{text}</p>
+          <h4 className={styles["tooltip-title"]} style={{ color }}>
+            {title}
+          </h4>
+          <p className={styles["tooltip-text"]} style={{ color }}>
+            {text}
+          </p>
         </div>
         <img
           src={crossIcon}
