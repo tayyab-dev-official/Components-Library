@@ -120,7 +120,7 @@ All components are built with a mobile-first approach and include responsive bre
 
 ## 📄 License
 
-This project is part of the Scrimba Frontend Developer Program.
+This project is open source and available under the MIT License.
 
 ## 📞 Contact
 
