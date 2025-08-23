@@ -1,6 +1,5 @@
 import styles from "./TestimonialWithoutImage.module.css";
 
-import shade from '../../assets/Path.png'
 import companyLogo from '../../assets/Mark.png'
 
 
