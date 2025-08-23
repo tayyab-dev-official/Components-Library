@@ -1,0 +1,75 @@
+.badge {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 1;
+  
+  padding-top: 2px;
+  padding-right: 12px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+}
+
+
+.square{
+  border-radius: 4px;
+}
+
+.pill{
+  border-radius: 12px;
+}
+
+.primary { background-color: #2563eb; }
+.success { background-color: #10b981; }
+.warning { background-color: #f59e0b; }
+.danger { background-color: #ef4444; }
+
+.primary,
+.success,
+.warning,
+.danger {
+  color: white;
+}
+
+.gray {
+  background: #F3F4F6;
+  color: #1F2937;
+}
+
+.red {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.yellow {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.green {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+.blue {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+.indigo {
+  background: #E0E7FF;
+  color: #3730A3;
+}
+
+.purple {
+  background: #EDE9FE;
+  color: #5B21B6;
+}
+
+.pink {
+  background: #FCE7F3;
+  color: #9D174D;
+}

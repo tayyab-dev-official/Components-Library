@@ -1,0 +1,6 @@
+.banners-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 10px;
+}
