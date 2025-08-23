@@ -10,26 +10,26 @@ export default function Tooltips(props){
         <section className={styles["tooltips-section"]}>
           <Tooltip
             background="#262626"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the course."
+            title="Save Changes"
+            text="Click to save your progress and continue working later."
           />
 
           <Tooltip
             background="#1E40AF"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the course."
+            title="Save Changes"
+            text="Click to save your progress and continue working later."
           />
 
           <Tooltip
             background="#A9229B"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the course."
+            title="Save Changes"
+            text="Click to save your progress and continue working later."
           />
 
           <Tooltip
             background="#47AA5D"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the course."
+            title="Save Changes"
+            text="Click to save your progress and continue working later."
           />
         </section>
 
@@ -37,29 +37,29 @@ export default function Tooltips(props){
           <TooltipLight
             color="#6B7280"
             background="#FFFFFF"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the course."
+            title="Save Changes"
+            text="Click to save your progress and continue working later."
           />
 
           <TooltipLight
             color="#1C51B9"
             background="#E0E7FF"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the course."
+            title="Save Changes"
+            text="Click to save your progress and continue working later."
           />
 
           <TooltipLight
             color="#C7369E"
             background="#FFF3FC"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the course."
+            title="Save Changes"
+            text="Click to save your progress and continue working later."
           />
 
           <TooltipLight
             color="#3C8C4E"
             background="#E7FFF3"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the course."
+            title="Save Changes"
+            text="Click to save your progress and continue working later."
           />
         </section>
       </article>
