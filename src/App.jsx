@@ -39,7 +39,7 @@ export default function App() {
         className="app-component"
         style={{ boxShadow: theme.shadows.card }}
       >
-        Testimonials
+        Tooltips
       </Tooltips>
 
       <Toast

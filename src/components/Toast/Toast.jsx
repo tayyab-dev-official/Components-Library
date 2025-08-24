@@ -14,15 +14,12 @@ function Toast(props) {
     if (active) {
       if (timerRef.current) {
         clearTimeout(timerRef.current);
-        // console.log('cleared previous timer!')
       }
 
-      // console.log("setting new timer and toggling state ....")
       timerRef.current = setTimeout(toggle, 3000);
     }
     return () => {
       clearTimeout(timerRef.current);
-      // console.log('removed timer and toggled state!')
     };
   }, [active]);
 
@@ -71,7 +68,7 @@ function Toast(props) {
       {toastContent &&
         createPortal(
           toastContent,
-          document.getElementById("root") || document.body
+          document.getElementById("portal-root") || document.body
         )}
     </>
   );
