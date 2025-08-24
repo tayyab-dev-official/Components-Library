@@ -71,7 +71,7 @@ function Toast(props) {
       {toastContent &&
         createPortal(
           toastContent,
-          document.getElementById("portal-root") || document.body
+          document.getElementById("root") || document.body
         )}
     </>
   );
