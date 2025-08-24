@@ -9,10 +9,11 @@ A **modern React component library** built with **Vite** featuring responsive **
 ## 🚀 Features
 
 - **7 Core Components**: Badge, Banner, Card, Testimonial, Tooltip, TooltipLight, Toast
-- **Modern React Patterns**: Hooks (useState, useEffect, useRef), Functional Components
+- **Modern React Patterns**: Hooks (useState, useEffect, useRef), Functional Components, React Portals
 - **State Management**: Local state with useState, side effects with useEffect
 - **Memory Management**: useRef for timer references, proper cleanup functions
 - **Component Composition**: Flexible prop-based configuration and children support
+- **React Portals**: Toast notifications render outside component tree for true overlay behavior
 - **Responsive Design**: Mobile-first approach with tablet and desktop breakpoints
 - **Accessibility**: WCAG AAA color contrast compliance
 - **CSS Modules**: Scoped styling preventing style conflicts
@@ -85,6 +86,7 @@ All components are built with a mobile-first approach and include responsive bre
 - **useState**: State management for component visibility, timer status, and user interactions
 - **useEffect**: Side effects handling for auto-dismiss timers and cleanup
 - **useRef**: Persistent timer references across re-renders without triggering updates
+- **createPortal**: Rendering components outside the normal component tree hierarchy
 
 ### Component Patterns
 
@@ -95,11 +97,13 @@ All components are built with a mobile-first approach and include responsive bre
 
 ### Advanced React Features
 
+- **React Portals**: Toast component uses `createPortal` to render outside component tree
 - **Custom Hooks**: useScreenSize for responsive behavior
 - **Component Composition**: Flexible children prop usage
 - **Props Destructuring**: Clean component interfaces
 - **Default Props**: Fallback values for component properties
 - **Dynamic Styling**: Conditional CSS classes and inline styles
+- **DOM Escape Hatches**: Portal rendering to specific DOM nodes for overlay components
 
 ## 📦 Components & React Concepts
 
@@ -145,16 +149,20 @@ All components are built with a mobile-first approach and include responsive bre
 
 ### Toast (Advanced)
 
-**React Concepts**: useState, useEffect, useRef, timer management, cleanup functions
+**React Concepts**: useState, useEffect, useRef, React Portals, timer management, cleanup functions
 
-- **Implementation**: Complex state management with multiple hooks
+- **Implementation**: Complex state management with multiple hooks and Portal rendering
 - **useState**: Controls banner visibility (`active` state)
 - **useRef**: Persistent timer reference (`timerRef.current`)
 - **useEffect**: Auto-dismiss logic with dependency array `[active]`
+- **React Portals**: Toast notifications render outside component tree using `createPortal`
+- **DOM Targeting**: Portal renders to `#portal-root` or fallback to `document.body`
+- **Positioning**: Fixed positioning (bottom-right) with high z-index for overlay behavior
 - **Cleanup**: Proper timer cleanup in useEffect return function
 - **Event Handling**: Toggle function with state updates
 - **Conditional Rendering**: Dynamic button text and banner display
 - **Memory Management**: Prevents memory leaks with proper timer cleanup
+- **Separation of Concerns**: Control button in normal flow, notifications in portal
 
 ## 🛠️ Tech Stack & React Implementation
 
