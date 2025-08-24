@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Badges from './components/Badge/Badges'
 import Banners from './components/Banner/Banners'
 import Cards from "./components/Card/Cards";
@@ -9,7 +9,7 @@ import "./index.css";
 import theme from "./theme";
 
 export default function App() {
-  const [showToast, setShowToast] = useState(true);
+  // const [showToast, setShowToast] = useState(true);
 
   return (
     <div style={{ padding: "20px" }}>
@@ -42,21 +42,11 @@ export default function App() {
         Testimonials
       </Tooltips>
 
-      <article
+      <Toast
         className="app-component"
         style={{ boxShadow: theme.shadows.card }}
-      >
-        <h2>Toast</h2>
-        <button onClick={() => setShowToast(true)}>Show Toast</button>
-        {showToast && (
-          <Toast
-            status="success"
-            title="Course Completed Successfully!"
-            text="Congratulations! You have successfully completed the Advanced Data Science course with a grade of 95%. Your certificate is now available for download."
-            onClose={() => setShowToast(false)}
-          />
-        )}
-      </article>
+      >Toasts</Toast>
+
     </div>
   );
 }

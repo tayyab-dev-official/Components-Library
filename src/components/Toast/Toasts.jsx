@@ -1,7 +1,7 @@
 import {useState, useEffect, useRef} from 'react'
 import Banner from '../Banner/Banner'
 
-function Toast(props){
+function Toasts(props){
     const [active, setActive] = useState(true)
     const timerRef = useRef(null)
 
@@ -62,4 +62,4 @@ function Toast(props){
     )
 }
 
-export default Toast
+export default Toasts
