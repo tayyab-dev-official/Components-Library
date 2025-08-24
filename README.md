@@ -2,73 +2,123 @@
 
 A **modern React component library** built with **Vite** featuring responsive **Badge, Banner, Card, Testimonial, Tooltip & Toast** components. Includes **CSS Modules**, **WCAG AAA accessibility**, **mobile-first design**, and **professional styling**. Perfect for building consistent, scalable web interfaces.
 
-## � Live Demo
+## 🔗 Live Demo
 
 **[View Live Demo](https://keshf-react-components.netlify.app/)**
 
-## �🚀 Features
+## 🚀 Features
 
-- **6 Core Components**: Badge, Banner, Card, Testimonial, Tooltip, Toast
+- **7 Core Components**: Badge, Banner, Card, Testimonial, Tooltip, TooltipLight, Toast
+- **Modern React Patterns**: Hooks (useState, useEffect, useRef), Functional Components
+- **State Management**: Local state with useState, side effects with useEffect
+- **Memory Management**: useRef for timer references, proper cleanup functions
+- **Component Composition**: Flexible prop-based configuration and children support
 - **Responsive Design**: Mobile-first approach with tablet and desktop breakpoints
 - **Accessibility**: WCAG AAA color contrast compliance
-- **Modern Styling**: CSS Modules with Inter font family
-- **TypeScript Ready**: Built with modern React patterns
+- **CSS Modules**: Scoped styling preventing style conflicts
+- **Auto-Dismiss Logic**: Smart timer management with React hooks
 - **Fast Development**: Vite for lightning-fast HMR
 
-## 📦 Components
+## ⚛️ React Concepts Demonstrated
+
+### Hooks Implementation
+- **useState**: State management for component visibility, timer status, and user interactions
+- **useEffect**: Side effects handling for auto-dismiss timers and cleanup
+- **useRef**: Persistent timer references across re-renders without triggering updates
+
+### Component Patterns
+- **Functional Components**: Modern React approach with hooks
+- **Controlled Components**: Prop-driven configuration and state management
+- **Conditional Rendering**: Dynamic content display based on state
+- **Event Handling**: onClick, onHover, and custom event callbacks
+
+### Advanced React Features
+- **Custom Hooks**: useScreenSize for responsive behavior
+- **Component Composition**: Flexible children prop usage
+- **Props Destructuring**: Clean component interfaces
+- **Default Props**: Fallback values for component properties
+- **Dynamic Styling**: Conditional CSS classes and inline styles
+
+## 📦 Components & React Concepts
 
 ### Badge
-
-Status indicators in multiple variants:
-
-- **Pill**: Rounded badges for status labels
-- **Square**: Rectangular badges for categorization
-- **Colors**: Primary, Success, Warning, Danger, Gray, Red, Yellow, Green, Blue, Indigo, Purple, Pink
+**React Concepts**: Props destructuring, conditional CSS classes
+- **Implementation**: Functional component with dynamic className composition
+- **Props**: `color`, `children` with default values
+- **Styling**: CSS Modules with conditional class application
 
 ### Banner
-
-Multi-line notification banners:
-
-- **Types**: Success, Warning, Error, Neutral
-- **Features**: Icons, titles, descriptions, and custom children support
+**React Concepts**: Switch statements, conditional rendering, children prop
+- **Implementation**: Icon selection logic with switch statement
+- **Props**: `status`, `title`, `text`, `children`
+- **Features**: Dynamic icon rendering and optional content sections
 
 ### Card
-
-Information display cards:
-
-- **Customizable**: Icons, backgrounds, titles, descriptions
-- **Responsive**: Adapts to different screen sizes
-- **Hover Effects**: Subtle shadows and transitions
+**React Concepts**: Default props, style object composition, component composition
+- **Implementation**: Flexible card layout with prop-based customization
+- **Props**: `icon`, `backgroundColor`, `title`, `text`, `children`
+- **Styling**: Dynamic background colors and responsive design
 
 ### Testimonial
+**React Concepts**: Custom hooks (useScreenSize), conditional logic, array methods
+- **Implementation**: Responsive avatar selection using custom hook
+- **Props**: `name`, `role`, `text`, `avatar`
+- **Features**: Screen size detection and random image selection from arrays
 
-Professional testimonial components:
+### Tooltip & TooltipLight
+**React Concepts**: useState for hover state, event handlers, conditional rendering
+- **Implementation**: Hover state management with mouse events
+- **Props**: `text`, `children`, `background`, `color`
+- **Features**: Dynamic visibility and positioning based on user interaction
 
-- **With Image**: Avatar support with responsive image selection
-- **Without Image**: Clean text-only layout with background graphics
-- **Features**: Author names, roles, company affiliations
+### Toast (Advanced)
+**React Concepts**: useState, useEffect, useRef, timer management, cleanup functions
+- **Implementation**: Complex state management with multiple hooks
+- **useState**: Controls banner visibility (`active` state)
+- **useRef**: Persistent timer reference (`timerRef.current`)
+- **useEffect**: Auto-dismiss logic with dependency array `[active]`
+- **Cleanup**: Proper timer cleanup in useEffect return function
+- **Event Handling**: Toggle function with state updates
+- **Conditional Rendering**: Dynamic button text and banner display
+- **Memory Management**: Prevents memory leaks with proper timer cleanup
 
-### Tooltip
+## 🛠️ Tech Stack & React Implementation
 
-Hover-triggered informational overlays:
+- **React**: 19.1.1 with modern functional components
+- **Hooks Used**: useState, useEffect, useRef for comprehensive state management
+- **Vite**: 7.1.2 (Build tool) with fast refresh for development
+- **CSS Modules**: Scoped styling preventing style conflicts
+- **ESLint**: Code quality and React best practices enforcement
+- **Custom Hooks**: useScreenSize for responsive behavior detection
 
-- **Positioning**: Auto-positioned relative to trigger element
-- **Styling**: Clean black background with white text
+## 🧠 React Best Practices Demonstrated
 
-### Toast
+### State Management
+- **Local State**: useState for component-specific data
+- **State Updates**: Functional updates with `prevState => !prevState`
+- **State Lifting**: Proper state placement at component level
 
-Auto-dismissing notification messages:
+### Side Effects & Cleanup
+- **useEffect**: Timer management and auto-dismiss functionality
+- **Cleanup Functions**: Preventing memory leaks with timer cleanup
+- **Dependency Arrays**: Optimized re-renders with proper dependencies
 
-- **Types**: Info, Success, Warning, Danger
-- **Features**: Auto-close timer, custom styling, fixed positioning
+### Performance Optimization
+- **useRef**: Persistent values without triggering re-renders
+- **Conditional Rendering**: Efficient DOM updates with `&&` operator
+- **Event Handler Optimization**: Preventing unnecessary re-renders
 
-## 🛠️ Tech Stack
+### Component Design
+- **Single Responsibility**: Each component has a focused purpose
+- **Prop Interface**: Clear and predictable component APIs
+- **Composition**: Flexible components using children prop
+- **Default Props**: Fallback values for better developer experience
 
-- **React**: 19.1.1
-- **Vite**: 7.1.2 (Build tool)
-- **CSS Modules**: Scoped styling
-- **ESLint**: Code quality and consistency
-- **React Icons**: Icon library support
+### Modern React Patterns
+- **Functional Components**: No class components, hooks-based approach
+- **Custom Hooks**: Reusable logic extraction (useScreenSize)
+- **Controlled Components**: Props-driven component behavior
+- **Event Handling**: Modern event handler patterns
 
 ## 🎨 Design System
 
