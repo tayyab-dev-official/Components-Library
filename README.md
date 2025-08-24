@@ -19,20 +19,82 @@ A **modern React component library** built with **Vite** featuring responsive **
 - **Auto-Dismiss Logic**: Smart timer management with React hooks
 - **Fast Development**: Vite for lightning-fast HMR
 
+## 📱 Responsive Design
+
+All components are built with a mobile-first approach and include responsive breakpoints:
+
+- **Mobile**: Optimized layouts for small screens
+- **Tablet**: Adjusted spacing and typography
+- **Desktop**: Full-featured layouts with enhanced visual hierarchy
+
+## ♿ Accessibility
+
+- WCAG AAA color contrast compliance
+- Semantic HTML structure
+- Keyboard navigation support
+- Screen reader compatible
+
+## 🧠 React Best Practices Demonstrated
+
+### State Management
+
+- **Local State**: useState for component-specific data
+- **State Updates**: Functional updates with `prevState => !prevState`
+- **State Lifting**: Proper state placement at component level
+
+### Side Effects & Cleanup
+
+- **useEffect**: Timer management and auto-dismiss functionality
+- **Cleanup Functions**: Preventing memory leaks with timer cleanup
+- **Dependency Arrays**: Optimized re-renders with proper dependencies
+
+### Performance Optimization
+
+- **useRef**: Persistent values without triggering re-renders
+- **Conditional Rendering**: Efficient DOM updates with `&&` operator
+- **Event Handler Optimization**: Preventing unnecessary re-renders
+
+### Component Design
+
+- **Single Responsibility**: Each component has a focused purpose
+- **Prop Interface**: Clear and predictable component APIs
+- **Composition**: Flexible components using children prop
+- **Default Props**: Fallback values for better developer experience
+
+### Modern React Patterns
+
+- **Functional Components**: No class components, hooks-based approach
+- **Custom Hooks**: Reusable logic extraction (useScreenSize)
+- **Controlled Components**: Props-driven component behavior
+- **Event Handling**: Modern event handler patterns
+
+## 🎨 Design System
+
+- **Typography**: Inter font family
+- **Breakpoints**:
+  - Mobile: ≤768px
+  - Tablet: 769-991px
+  - Desktop: ≥992px
+- **Color Scheme**: Professional palette with semantic colors
+- **Spacing**: Consistent spacing scale (8px, 16px, 24px)
+
 ## ⚛️ React Concepts Demonstrated
 
 ### Hooks Implementation
+
 - **useState**: State management for component visibility, timer status, and user interactions
 - **useEffect**: Side effects handling for auto-dismiss timers and cleanup
 - **useRef**: Persistent timer references across re-renders without triggering updates
 
 ### Component Patterns
+
 - **Functional Components**: Modern React approach with hooks
 - **Controlled Components**: Prop-driven configuration and state management
 - **Conditional Rendering**: Dynamic content display based on state
 - **Event Handling**: onClick, onHover, and custom event callbacks
 
 ### Advanced React Features
+
 - **Custom Hooks**: useScreenSize for responsive behavior
 - **Component Composition**: Flexible children prop usage
 - **Props Destructuring**: Clean component interfaces
@@ -42,37 +104,49 @@ A **modern React component library** built with **Vite** featuring responsive **
 ## 📦 Components & React Concepts
 
 ### Badge
+
 **React Concepts**: Props destructuring, conditional CSS classes
+
 - **Implementation**: Functional component with dynamic className composition
 - **Props**: `color`, `children` with default values
 - **Styling**: CSS Modules with conditional class application
 
 ### Banner
+
 **React Concepts**: Switch statements, conditional rendering, children prop
+
 - **Implementation**: Icon selection logic with switch statement
 - **Props**: `status`, `title`, `text`, `children`
 - **Features**: Dynamic icon rendering and optional content sections
 
 ### Card
+
 **React Concepts**: Default props, style object composition, component composition
+
 - **Implementation**: Flexible card layout with prop-based customization
 - **Props**: `icon`, `backgroundColor`, `title`, `text`, `children`
 - **Styling**: Dynamic background colors and responsive design
 
 ### Testimonial
+
 **React Concepts**: Custom hooks (useScreenSize), conditional logic, array methods
+
 - **Implementation**: Responsive avatar selection using custom hook
 - **Props**: `name`, `role`, `text`, `avatar`
 - **Features**: Screen size detection and random image selection from arrays
 
 ### Tooltip & TooltipLight
+
 **React Concepts**: useState for hover state, event handlers, conditional rendering
+
 - **Implementation**: Hover state management with mouse events
 - **Props**: `text`, `children`, `background`, `color`
 - **Features**: Dynamic visibility and positioning based on user interaction
 
 ### Toast (Advanced)
+
 **React Concepts**: useState, useEffect, useRef, timer management, cleanup functions
+
 - **Implementation**: Complex state management with multiple hooks
 - **useState**: Controls banner visibility (`active` state)
 - **useRef**: Persistent timer reference (`timerRef.current`)
@@ -90,45 +164,6 @@ A **modern React component library** built with **Vite** featuring responsive **
 - **CSS Modules**: Scoped styling preventing style conflicts
 - **ESLint**: Code quality and React best practices enforcement
 - **Custom Hooks**: useScreenSize for responsive behavior detection
-
-## 🧠 React Best Practices Demonstrated
-
-### State Management
-- **Local State**: useState for component-specific data
-- **State Updates**: Functional updates with `prevState => !prevState`
-- **State Lifting**: Proper state placement at component level
-
-### Side Effects & Cleanup
-- **useEffect**: Timer management and auto-dismiss functionality
-- **Cleanup Functions**: Preventing memory leaks with timer cleanup
-- **Dependency Arrays**: Optimized re-renders with proper dependencies
-
-### Performance Optimization
-- **useRef**: Persistent values without triggering re-renders
-- **Conditional Rendering**: Efficient DOM updates with `&&` operator
-- **Event Handler Optimization**: Preventing unnecessary re-renders
-
-### Component Design
-- **Single Responsibility**: Each component has a focused purpose
-- **Prop Interface**: Clear and predictable component APIs
-- **Composition**: Flexible components using children prop
-- **Default Props**: Fallback values for better developer experience
-
-### Modern React Patterns
-- **Functional Components**: No class components, hooks-based approach
-- **Custom Hooks**: Reusable logic extraction (useScreenSize)
-- **Controlled Components**: Props-driven component behavior
-- **Event Handling**: Modern event handler patterns
-
-## 🎨 Design System
-
-- **Typography**: Inter font family
-- **Breakpoints**:
-  - Mobile: ≤768px
-  - Tablet: 769-991px
-  - Desktop: ≥992px
-- **Color Scheme**: Professional palette with semantic colors
-- **Spacing**: Consistent spacing scale (8px, 16px, 24px)
 
 ## 🚀 Getting Started
 
@@ -157,20 +192,7 @@ npm run preview  # Preview production build
 npm run lint     # Run ESLint
 ```
 
-## 📱 Responsive Design
 
-All components are built with a mobile-first approach and include responsive breakpoints:
-
-- **Mobile**: Optimized layouts for small screens
-- **Tablet**: Adjusted spacing and typography
-- **Desktop**: Full-featured layouts with enhanced visual hierarchy
-
-## ♿ Accessibility
-
-- WCAG AAA color contrast compliance
-- Semantic HTML structure
-- Keyboard navigation support
-- Screen reader compatible
 
 ## 🤝 Contributing
 
