@@ -31,14 +31,16 @@ export default function App() {
       <Testimonials
         className="app-component"
         style={{ boxShadow: theme.shadows.card }}
-      >Testimonials</Testimonials>
+      >
+        Testimonials
+      </Testimonials>
 
       <Tooltips
         className="app-component"
         style={{ boxShadow: theme.shadows.card }}
-      >Testimonials</Tooltips>
-
-      
+      >
+        Testimonials
+      </Tooltips>
 
       <article
         className="app-component"
@@ -48,8 +50,9 @@ export default function App() {
         <button onClick={() => setShowToast(true)}>Show Toast</button>
         {showToast && (
           <Toast
-            message="Action completed successfully!"
-            type="success"
+            status="success"
+            title="Course Completed Successfully!"
+            text="Congratulations! You have successfully completed the Advanced Data Science course with a grade of 95%. Your certificate is now available for download."
             onClose={() => setShowToast(false)}
           />
         )}
